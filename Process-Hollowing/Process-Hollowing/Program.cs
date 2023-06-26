@@ -1,3 +1,4 @@
+// this is a Process hollowing executable, a regular shellcode runner and amsi bypass in powershell can be found in the root of this repo
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
